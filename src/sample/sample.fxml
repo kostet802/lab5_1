@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <AnchorPane prefHeight="486.0" prefWidth="756.0">
+            <children>
+                <TextField fx:id="fieldNumber" layoutX="38.0" layoutY="34.0" prefHeight="31.0" prefWidth="180.0" promptText="Number" />
+                <TextField fx:id="fieldFio" layoutX="266.0" layoutY="34.0" prefHeight="31.0" prefWidth="227.0" promptText="Fio" />
+                <TextField fx:id="fieldAdress" layoutX="545.0" layoutY="34.0" prefHeight="31.0" prefWidth="159.0" promptText="Adress" />
+                <Button layoutX="301.0" layoutY="80.0" mnemonicParsing="false" onAction="#onAdd" text="Add" />
+                <Button layoutX="376.0" layoutY="80.0" mnemonicParsing="false" onAction="#onSave" text="Save" />
+                <TextField fx:id="fieldOperator" layoutX="270.0" layoutY="140.0" />
+                <Label fx:id="lblAdvise" layoutX="480.0" layoutY="140.0" prefHeight="31.0" prefWidth="227.0" />
+                <Button layoutX="331.0" layoutY="201.0" mnemonicParsing="false" onAction="#onSelection" text="Select" />
+                <ComboBox fx:id="cbOperator" layoutX="59.0" layoutY="140.0" prefHeight="31.0" prefWidth="180.0" />
+                <Label fx:id="lblAlert" layoutX="483.0" layoutY="85.0" prefHeight="21.0" prefWidth="123.0" />
+                <TextArea fx:id="fieldResult" editable="false" layoutX="264.0" layoutY="241.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
